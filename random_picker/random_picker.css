@@ -32,9 +32,10 @@ textarea {
 
 .tag {
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 100px;
     color: #ffffff;
     background-color: #f0932b;
-    margin: 10px;
+    margin: 0 5px 10px 0;
+    display: inline-block;
 }
