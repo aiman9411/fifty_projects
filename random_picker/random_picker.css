@@ -9,7 +9,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    background-color: #045256;
+    background-color: #2b88f0;
     color: #fff;
 }
 
@@ -24,7 +24,6 @@ textarea {
     border: none;
     display: block;
     width: 100%;
-    margin
 }
 
 #tags {
@@ -35,7 +34,7 @@ textarea {
     border: none;
     padding: 10px;
     border-radius: 100px;
-    color: #000;
-    background-color: #ddf7f8;
+    color: #ffffff;
+    background-color: #f0932b;
     margin: 10px;
 }
