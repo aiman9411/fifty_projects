@@ -24,6 +24,7 @@ textarea {
     border: none;
     display: block;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 #tags {
