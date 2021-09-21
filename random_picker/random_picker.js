@@ -4,7 +4,11 @@ const textArea = document.getElementById('textarea');
 textArea.focus();
 
 textArea.addEventListener('keyup', (e) => {
-    createTags(e.target.value)
+    createTags(e.target.value);
+
+    if(e.key === 'Enter') {
+        randomSelect();
+    }
 });
 
 function createTags(input) {
