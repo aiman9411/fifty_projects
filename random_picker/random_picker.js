@@ -10,7 +10,7 @@ textArea.addEventListener('keyup', (e) => {
         setTimeout(() => {
             e.target.value = ""
         }, 10);
-        
+
         randomSelect();
     }
 });
@@ -28,3 +28,15 @@ function createTags(input) {
     })
 };
 
+function randomSelect() {
+    const times = 30;
+
+    const interval = setInterval(() => {
+        const randomTag = pickRandomTag()
+    }, 100);
+};
+
+function pickRandomTag() {
+    const tags = document.querySelectorAll('.tag');
+    return tags[Math.floor(Math.random() * tags.length)]
+};
