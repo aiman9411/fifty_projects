@@ -36,7 +36,9 @@ function randomSelect() {
     }, 100);
 };
 
+// Pick Random Function
 function pickRandomTag() {
     const tags = document.querySelectorAll('.tag');
     return tags[Math.floor(Math.random() * tags.length)]
 };
+
