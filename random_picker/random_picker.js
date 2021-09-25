@@ -6,13 +6,13 @@ textArea.focus();
 textArea.addEventListener('keyup', (e) => {
     createTags(e.target.value);
 
-    if(e.key === 'Enter') {
+    if(e.key === "Enter") {
         setTimeout(() => {
-            e.target.value = ""
+            e.target.value = "";
         }, 10);
 
-        randomSelect();
-    }
+        randomSelect()
+    };
 });
 
 function createTags(input) {
@@ -28,26 +28,30 @@ function createTags(input) {
     })
 };
 
+// Pick Random Function
 function randomSelect() {
-    const times = 30;
+    const time = 30;
 
     const interval = setInterval(() => {
-        const randomTag = pickRandomTag()
+        const randomTag = pickRandomTag();
+
         highlightTag(randomTag);
 
+        setTimeout(() => {
+            unHighlightTag(randomTag)
+        }, 100)
     }, 100);
-};
+}
 
-// Pick Random Function
 function pickRandomTag() {
     const tags = document.querySelectorAll('.tag');
-    return tags[Math.floor(Math.random() * tags.length)]
-};
+    return tags[Math.floor(Math.random() * tags.length)];
+}
 
 function highlightTag(tag) {
-    tag.classList.add('highlight')
-};
+    tag.classList.add("highlight")
+}
 
-function unhighlightTag(tag) {
-    tag.classList.remove('hightlight')
-};
+function unHighlightTag(tag) {
+    tag.classList.remove("highlight")
+}
