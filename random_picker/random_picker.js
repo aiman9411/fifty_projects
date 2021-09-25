@@ -30,17 +30,30 @@ function createTags(input) {
 
 // Pick Random Function
 function randomSelect() {
-    const time = 30;
+    const times = 30;
 
     const interval = setInterval(() => {
         const randomTag = pickRandomTag();
 
-        highlightTag(randomTag);
+        if (randomTag !== undefined) {
+            highlightTag(randomTag)
+    
+            setTimeout(() => {
+                unHighlightTag(randomTag)
+            }, 100)
+        }
+        }, 100);
+
+    setTimeout(() => {
+        clearInterval(interval)
 
         setTimeout(() => {
-            unHighlightTag(randomTag)
+            const randomTag = pickRandomTag()
+
+            highlightTag(randomTag)
         }, 100)
-    }, 100);
+
+    }, times * 100)
 }
 
 function pickRandomTag() {
