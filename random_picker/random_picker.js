@@ -1,6 +1,7 @@
 const tagsEl = document.getElementById('tags');
 const textArea = document.getElementById('textarea');
 
+//Focus on one element
 textArea.focus();
 
 textArea.addEventListener('keyup', (e) => {
