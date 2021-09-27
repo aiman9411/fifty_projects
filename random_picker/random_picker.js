@@ -46,7 +46,7 @@ function randomSelect() {
                 unHighlightTag(randomTag)
             }, 100)
         }
-        }, 100);
+    }, 100);
 
     setTimeout(() => {
         clearInterval(interval)
