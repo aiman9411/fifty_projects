@@ -1,9 +1,11 @@
+//Get elements
 const tagsEl = document.getElementById('tags');
 const textArea = document.getElementById('textarea');
 
 //Focus on one element
 textArea.focus();
 
+//Add Event Listener
 textArea.addEventListener('keyup', (e) => {
     createTags(e.target.value);
 
@@ -16,6 +18,7 @@ textArea.addEventListener('keyup', (e) => {
     };
 });
 
+//Create tags function
 function createTags(input) {
     const tags = input.split(",").filter(tag => tag.trim() !== "").map(tag => tag.trim());
     
@@ -57,15 +60,18 @@ function randomSelect() {
     }, times * 100)
 }
 
+//Define Pick Random Tag Function 
 function pickRandomTag() {
     const tags = document.querySelectorAll('.tag');
     return tags[Math.floor(Math.random() * tags.length)];
 }
 
+//Highlight Tag
 function highlightTag(tag) {
     tag.classList.add("highlight");
 };
 
+//Unhighlight Tag
 function unHighlightTag(tag) {
     tag.classList.remove("highlight");
 };
