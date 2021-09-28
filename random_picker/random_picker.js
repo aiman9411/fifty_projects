@@ -32,7 +32,7 @@ function createTags(input) {
     })
 };
 
-// Define Random Function
+//Define Random Function
 function randomSelect() {
     const times = 30;
 
