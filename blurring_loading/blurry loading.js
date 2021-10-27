@@ -6,6 +6,7 @@ let load = 0;
 
 let int = setInterval(blurring, 50);
 
+// Define function
 function blurring() {
   load++;
 
