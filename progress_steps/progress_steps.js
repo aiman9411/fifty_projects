@@ -1,50 +1,54 @@
+// Query everything
 const progress = document.getElementById('progress');
-const prev = document.getElementById('prev');
 const next = document.getElementById('next');
+const prev = document.getElementById('prev');
 const circles = document.querySelectorAll('.circle');
 
-let currentActive = 1;
+// Start the counter
+let activeNum = 1;
 
+// Work on Next button
 next.addEventListener('click', () => {
-    currentActive++;
+    activeNum++;
 
-    if(currentActive > circles.length) {
-        currentActive = circles.length
-    };
+    if(activeNum > circles.length) {
+        activeNum === circles.length
+    }
 
     update();
 })
 
+// Work on Prev button
 prev.addEventListener('click', () => {
-    currentActive--;
+    activeNum--;
 
-    if(currentActive < 1) {
-        currentActive === 1;
-    };
+    if(activeNum < 1) {
+        activeNum === 1
+    }
 
     update();
 })
 
+// Create Update Function
 function update() {
     circles.forEach((circle, idx) => {
-        if(idx < currentActive) {
+        if(idx < activeNum) {
             circle.classList.add('active')
         } else {
             circle.classList.remove('active')
         }
     })
-
+    
     const actives = document.querySelectorAll('.active');
-    progress.style.width = ((actives.length - 1)/(circles.length -1))*100 + '%';
+    progress.style.width = ((actives.length - 1)/(circles.length - 1))*100 + '%';
 
-    if(currentActive === 1) {
-        prev.disabled = true;
-    } else if (currentActive === circles.length) {
+    if(activeNum > circles.length) {
         next.disabled = true;
+    } else if (activeNum < 1) {
+        prev.disabled = true;
     } else {
-        prev.disabled = false;
         next.disabled = false;
+        prev.disabled = false;
     }
 
-};
-
+}
