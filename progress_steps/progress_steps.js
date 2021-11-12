@@ -1,8 +1,8 @@
 // Query everything
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const circles = document.querySelectorAll('.circle');
 const progress = document.getElementById('progress');
+const circles = document.querySelectorAll('.circle');
+const next = document.getElementById('next');
+const prev = document.getElementById('prev');
 
 // Start the counter
 let activeNum = 1;
@@ -11,28 +11,32 @@ let activeNum = 1;
 next.addEventListener('click', () => {
 
     activeNum++
+
     if(activeNum > circles.length) {
         activeNum === circles.length
     }
 
-    update();
+    update()
 })
 
 // Work on Prev button
 prev.addEventListener('click', () => {
+
     activeNum--
+
     if(activeNum < 1) {
         activeNum === 1
     }
 
-    update();
+    update()
 })
 
 // Create Update Function
+
 function update() {
     circles.forEach((circle, idx) => {
         if(activeNum > idx) {
-            circle.classList.add('active')
+            circle.classList.add('active');
         } else {
             circle.classList.remove('active');
         }
@@ -42,10 +46,11 @@ function update() {
 
     if(activeNum === circles.length) {
         next.disabled = true;
-    } else if (activeNum === 1) {
+    } else if(activeNum === 1) {
         prev.disabled = true;
     } else {
         next.disabled = false;
         prev.disabled = false;
     }
+
 }
