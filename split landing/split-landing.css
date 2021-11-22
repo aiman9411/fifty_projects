@@ -17,6 +17,17 @@ body {
     overflow: hidden;
 }
 
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    /* border: 1px solid white; */
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
 .container {
     /* border: 1px solid black; */
     position: relative;
