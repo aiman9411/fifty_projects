@@ -75,6 +75,6 @@ body {
 
 .form-control label{
     position: absolute;
-    top: 0px;
+    top: 15px;
     left: 0;
 }
