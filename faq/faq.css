@@ -7,8 +7,12 @@
 body {
     /* border: 1px solid black; */
     font-family: 'Muli', sans-serif;
-    margin: 0;
-    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin: 50px 0 30px;
+    text-align: center;
 }
 
 .faq-container {
@@ -18,11 +22,17 @@ body {
 }
 
 .faq {
-    border: 1px solid #9fa4a8;
-    border-radius: 5px;
-    margin: 15px 0;
-    padding: 30px;
     background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
     position: relative;
     overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+.faq.active {
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
