@@ -5,12 +5,13 @@ textArea.focus();
 
 textArea.addEventListener('keyup', (e) => {
     createTags(e.target.value)
+    // console.log(e.target.value);
 })
 
 function createTags(input) {
     const tags = input.split(',').filter(tag => tag.trim() !== '').map(tag => tag.trim())
-    
-    tagsEl.innerHTML = ''
+    // console.log(tags);
+    tagsEl.innerHTML = '';
 
     tags.forEach(tag => {
         const tagEl = document.createElement('span')
