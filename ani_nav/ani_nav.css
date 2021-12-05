@@ -72,6 +72,10 @@ nav ul li a {
     cursor: pointer;
 }
 
+.icon:focus {
+    outline: none;
+}
+
 .icon .line {
     background-color: #5290f9;
     height: 2px;
