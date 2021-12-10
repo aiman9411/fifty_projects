@@ -68,3 +68,14 @@ h3 {
     background-color: var(--fill-color);
     color: #fff;
 }
+
+.remained {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s ease;
+}
