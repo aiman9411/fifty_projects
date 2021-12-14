@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -101,4 +101,26 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+}
+
+.time {
+    font-size: 80px;
+}
+
+.date {
+    color: #aaaaaa;
+    letter-spacing: 0.3px;
+}
+
+.day {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    transition: all 0.3s ease-in;
 }
