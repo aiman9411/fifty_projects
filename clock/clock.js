@@ -23,7 +23,7 @@ toggle.addEventListener('click', (e) => {
 function setTime() {
     const currentDate = new Date();
     const hour = currentDate.getHours();
-    const hoursForClock = hour % 12;
+    const hoursForClock = hour >= 13 ? hour%12 : hour;
     const minutes = currentDate.getMinutes();
     const seconds = currentDate.getSeconds();
     const ampm = hour >= 12 ? 'PM': 'AM';
