@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border: 1px solid black;
+    background-color: blanchedalmond;   
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 0 15px;
+    background-color: #ffffff;
+}
+
+.fill {
+    
+}
+
+@media (max-width: 700px) {
+    body {
+        flex-direction: column;
+    }
+
+    .empty {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+    }
+}
