@@ -15,13 +15,16 @@ body {
 .empty {
     width: 150px;
     height: 150px;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: 0 15px;
     background-color: #ffffff;
 }
 
 .fill {
-    
+    background-image: url('https://source.unsplash.com/random/150X150');
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
 }
 
 @media (max-width: 700px) {
