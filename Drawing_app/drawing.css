@@ -13,19 +13,17 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
   }
 
 canvas {
     border: 2px solid steelblue;
-    height: 80vh;
 }
 
 .toolbox {
     background-color: steelblue;
     border: 1px solid slateblue;
     display: flex;
-    width: 80vh;
+    width: 804px;
     padding: 1rem;
 }
 
