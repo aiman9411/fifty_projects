@@ -1,10 +1,9 @@
 const canvas = document.getElementById('canvas');
 const decreaseButton = document.getElementById('decrease');
 const increaseButton = document.getElementById('increase');
-const size = document.getElementById('size');
-const color = document.getElementById('color');
+const sizeButton = document.getElementById('size');
+const colorButton = document.getElementById('color');
 const clearButton = document.getElementById('clear');
-
 
 var ctx = canvas.getContext('2d');
 
@@ -62,3 +61,4 @@ canvas.addEventListener('mousemove', (e) => {
     }
 })
 
+colorButton.addEventListener('change', (e) => color = e.target.value);
