@@ -1,13 +1,13 @@
 const canvas = document.getElementById('canvas');
 const decreaseButton = document.getElementById('decrease');
 const increaseButton = document.getElementById('increase');
-const sizeButton = document.getElementById('size');
+const sizeEl = document.getElementById('size');
 const colorButton = document.getElementById('color');
 const clearButton = document.getElementById('clear');
 
 var ctx = canvas.getContext('2d');
 
-let size = 20;
+let size = 10;
 
 let color = 'black';
 let isPressed = false;
@@ -59,6 +59,20 @@ canvas.addEventListener('mousemove', (e) => {
         x = x2;
         y = y2
     }
+})
+
+function updateSizeOnScreen() {
+    sizeEl.innerText = size;
+}
+
+increaseButton.addEventListener('click', () => {
+    size += 5
+
+    if(size > 50) {
+        size = 50
+    }
+
+    updateSizeOnScreen()
 })
 
 colorButton.addEventListener('change', (e) => color = e.target.value);
