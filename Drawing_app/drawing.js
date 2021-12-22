@@ -86,3 +86,5 @@ decreaseButton.addEventListener('click', () => {
 })
 
 colorButton.addEventListener('change', (e) => color = e.target.value);
+
+clearButton.addEventListener('click', () => ctx.clearRect(0, 0, canvas.width, canvas.height));
