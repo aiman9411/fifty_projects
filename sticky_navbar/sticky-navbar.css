@@ -23,4 +23,28 @@ body {
     justify-content: center;
     text-align: center;
     color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: -2;
+}
+
+.hero::before {
+    content: '';
+    background-color: rgba(0,0,0, 0.5);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin: -20px 0 20px;
+}
+
+.hero p {
+    font-size: 25px;
+    letter-spacing: 1px;
 }
