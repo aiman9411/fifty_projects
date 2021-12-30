@@ -18,6 +18,36 @@ body {
     margin: 0 auto;
 }
 
+.nav {
+    position: fixed;
+    background-color: #222;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+ a {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 15px;
+}
+
 .hero {
     background-image: url('https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     height: 100vh;
