@@ -42,10 +42,31 @@ body {
     justify-content: center;
 }
 
+.nav a.current, 
+.nav a:hover,
+.nav.active a.current, 
+.nav.active a:hover{
+    color: red;
+}
+
  a {
     text-decoration: none;
     color: #fff;
     padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active .container {
+    padding: 14px 0;
+}
+
+.nav.active a {
+    color: #222;
 }
 
 .hero {
