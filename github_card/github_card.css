@@ -13,13 +13,56 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 input {
-    width: 100vw;
+    font-family: inherit;
+    background-color: #eaedf6;
+    width: 50vw;
     margin: 20px 0;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
 }
 
 input:focus {
     outline: none;
+}
+
+main {
+    width: 50vw;
+    border: 2px solid rgba(27, 31, 36, 0.15);
+    border-radius: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.details {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: -40px;
+    justify-content: space-between;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
 }
