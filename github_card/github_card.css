@@ -4,9 +4,28 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+html {
+    transition: all 0.5s ease-in;
+}
+  
+html.dark {
+    --primary-color: #fff;
+    --secondary-color: #333;
+}
+  
+html.dark {
+    background-color: #111;
+    color: var(--primary-color);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     margin: 0;
     height: 100vh;
     display: flex;
@@ -46,7 +65,7 @@ input:focus {
 
 main {
     width: 50vw;
-    border: 2px solid rgba(27, 31, 36, 0.15);
+    border: 1px solid var(--primary-color);
     border-radius: 20px;
 }
 
@@ -92,7 +111,7 @@ main {
     color: #000;
     padding: 5px 10px;
     border-radius: 20px;
-    border: 1px solid rgba(27, 31, 36, 0.15);
+    border: 1px solid var(--primary-color);
 }
 
 h1 {
