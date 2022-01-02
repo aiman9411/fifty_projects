@@ -121,3 +121,25 @@ main {
 h1 {
     margin-bottom: -10px;
 }
+
+@media (max-width: 1000px) {
+
+    #mode {
+        top: 7%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list2 {
+        flex-wrap: wrap;
+    }
+
+    .repo {
+        margin: 10px;
+    }
+
+}
