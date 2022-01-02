@@ -7,6 +7,7 @@
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
+    --tertiary-color: #afb8c1;
 }
 
 /* html {
@@ -16,6 +17,7 @@
 html.dark {
     --primary-color: #fff;
     --secondary-color: #333;
+    --tertiary-color: #fff;
 }
   
 html.dark {
@@ -65,7 +67,7 @@ input:focus {
 
 main {
     width: 50vw;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--tertiary-color);
     border-radius: 20px;
 }
 
