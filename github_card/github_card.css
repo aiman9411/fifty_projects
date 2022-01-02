@@ -66,9 +66,9 @@ input:focus {
     outline: none;
 }
 
-main {
-    width: 50vw;
-    border: 1px solid var(--tertiary-color);
+#main {
+    /* width: 50vw; */
+    border: 0.1px solid var(--tertiary-color);
     border-radius: 20px;
 }
 
@@ -76,6 +76,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .avatar {
@@ -135,9 +137,6 @@ h1 {
     }
 
     .list2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-wrap: wrap;
     }
 
