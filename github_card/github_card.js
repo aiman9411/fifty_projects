@@ -75,7 +75,7 @@ function createUserCard(user) {
 function addReposToCard(repos) {
     const reposEl = document.getElementById('repos')
     repos
-        .slice(2,5)
+        .slice(0,3)
         .forEach(repo => {
             const repoEl = document.createElement('a');
             repoEl.classList.add('repo');
