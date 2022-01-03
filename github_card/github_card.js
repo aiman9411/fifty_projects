@@ -51,7 +51,7 @@ function createUserCard(user) {
                 <li class="follows">${user.following} following</li>
                 <li class="follows">${user.public_repos} repos</li>
             </ul>
-            <ul class="list2">
+            <ul id="sec-ul" class="list2">
                 <li class="repo">Repo 1</li>
                 <li class="repo">Repo 2</li>
                 <li class="repo">Repo 3</li>
@@ -59,5 +59,6 @@ function createUserCard(user) {
         </div>
     </div>
     `
-    main.innerHTML = cardHTML;
+    main.innerHTML = cardHTML
+    main.style.border = '1px solid var(--tertiary-color)';
 } 

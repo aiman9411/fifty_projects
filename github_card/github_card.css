@@ -68,7 +68,6 @@ input:focus {
 
 #main {
     /* width: 50vw; */
-    border: 0.1px solid var(--tertiary-color);
     border-radius: 20px;
 }
 
@@ -142,6 +141,15 @@ h1 {
 
     .repo {
         margin: 10px;
+    }
+
+    #name, #desc {
+        text-align: center;
+    }
+
+    #sec-ul {
+        display: flex;
+        justify-content: center;
     }
 
 }
