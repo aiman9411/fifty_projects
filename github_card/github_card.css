@@ -45,7 +45,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 25%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, 0);
     cursor: pointer;
@@ -130,7 +130,7 @@ h1 {
 @media (max-width: 1000px) {
 
     #mode {
-        top: 7%;
+        top: 5%;
     }
 
     .card {

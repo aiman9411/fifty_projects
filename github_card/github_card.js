@@ -29,11 +29,10 @@ async function getUser(username) {
 
 async function getRepos(username) {
     try {
-        const { data } = await axios(APIURL + username + '/repos')
-
-        addReposToCard(data)
+        const { data } = await axios(APIURL + username + '/repos?sort=created');
+        addReposToCard(data);
     } catch(err) {
-        createErrorCard('Problem fetching repos')
+        createErrorCard('Problem fetching repos');
     }
 }
 
@@ -76,7 +75,7 @@ function createUserCard(user) {
 function addReposToCard(repos) {
     const reposEl = document.getElementById('repos')
     repos
-        .slice(0,6)
+        .slice(2,5)
         .forEach(repo => {
             const repoEl = document.createElement('a');
             repoEl.classList.add('repo');
