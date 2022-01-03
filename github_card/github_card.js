@@ -33,8 +33,7 @@ async function getRepos(username) {
 
         addReposToCard(data)
     } catch(err) {
-        // createErrorCard('Problem fetching repos')
-        console.log(err.message);
+        createErrorCard('Problem fetching repos')
     }
 }
 
