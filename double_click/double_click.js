@@ -35,4 +35,8 @@ const createHeart = (e) => {
 
     lovePicture.appendChild(heart);
     times.innerHTML = ++timeClicked;
+
+    setTimeout(() => {
+        heart.remove()
+    }, 1000);
 }
