@@ -12,8 +12,14 @@
     <body>
         <h1 id="statement"></h1>
         <div id="container">
-            <label for="speed">Speed:</label>
-            <input type="number" id="speed" name="speed" min="1" max="5" step="1">
+            <form id="form">
+                <label for="sentence">Text Input:</label>
+                <input type="text" id="sentence" name="sentence">
+            </form>
+            <div id="form2">
+                <label for="speed">Speed:</label>
+                <input type="number" id="speed" name="speed" min="1" max="10" step="1" value="1">
+            </div>
         </div>
         <script src="auto_text.js"></script>
     </body>
