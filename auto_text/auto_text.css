@@ -18,6 +18,10 @@ body {
     position: relative;
 }
 
+#statement {
+    font-size: 40px;
+}
+
 #container {
     position: absolute;
     bottom: 40px;
@@ -28,7 +32,7 @@ body {
 #speed {
     background-color: #1a374d;
     border: none;
-    padding: 7px;
+    padding: 10px;
     font-size: 15px;
     color: rgba(255, 255, 255, 0.8);
 }
