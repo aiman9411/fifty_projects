@@ -7,6 +7,12 @@ const symbolsEl = document.getElementById('symbols');
 const generateEl = document.getElementById('gen-button');
 const copyEl = document.getElementById('copy-button');
 
+
+generateEl.addEventListener('click', () => {
+    const length = +lengthEl.value;
+    console.log(length);
+})
+
 const randomFunc = {
     lower: getLower,
     upper: getUpper,
