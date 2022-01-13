@@ -14,7 +14,22 @@ generateEl.addEventListener('click', () => {
     const hasLower = lowercaseEl.checked;
     const hasNumber = numbersEl.checked;
     const hasSymbol = symbolsEl.checked; 
+
+    resultEl.innerText = generatePassword(hasUpper, hasLower, 
+        hasNumber, hasSymbol, length);
+
 })
+
+function generatePassword(upper, lower, number, symbol, length) {
+    let generatedPassword = '';
+    const typeCount = upper + lower + number + symbol;
+    const typesArr = [{upper}, {lower}, {number}, {symbol}].
+    filter(item => Object.values(item)[0])
+    
+    if(typeCount === 0) {
+        return '';
+    }
+}
 
 const randomFunc = {
     lower: getLower,
