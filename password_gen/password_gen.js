@@ -10,7 +10,10 @@ const copyEl = document.getElementById('copy-button');
 
 generateEl.addEventListener('click', () => {
     const length = +lengthEl.value;
-    console.log(length);
+    const hasUpper = uppercaseEl.checked;
+    const hasLower = lowercaseEl.checked;
+    const hasNumber = numbersEl.checked;
+    const hasSymbol = symbolsEl.checked; 
 })
 
 const randomFunc = {
