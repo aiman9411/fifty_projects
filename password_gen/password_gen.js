@@ -15,17 +15,17 @@ const randomFunc = {
 }
 
 copyEl.addEventListener('click', () => {
-    const textArea = document.createElement('textarea');
+    const textarea = document.createElement('textarea');
     const password = resultEl.innerText;
 
-    if(!password) {return};
+    if(!password) {return}
 
-    textArea.value = password;
-    document.body.appendChild(textArea);
-    textArea.select();
+    textarea.value = password;
+    document.body.appendChild(textarea);
+    textarea.select();
     document.execCommand('copy');
-    textArea.remove();
-    alert('Password is already copied to clipboard');
+    textarea.remove();
+    alert('Password copied to clipboard!');
 })
 
 generateEl.addEventListener('click', () => {
@@ -40,6 +40,9 @@ generateEl.addEventListener('click', () => {
     resultEl.innerText = generatePassword(hasUpper, hasLower, 
         hasNumber, hasSymbol, length);
 
+    setTimeout(() => {
+       resultEl.innerHTML = ''; 
+    }, 5000);
 })
 
 function generatePassword(upper, lower, number, symbol, length) {
