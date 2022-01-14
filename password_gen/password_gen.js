@@ -25,7 +25,7 @@ copyEl.addEventListener('click', () => {
     textArea.select();
     document.execCommand('copy');
     textArea.remove();
-    alert('Password copied to clipboard');
+    alert('Password is already copied to clipboard');
 })
 
 generateEl.addEventListener('click', () => {
