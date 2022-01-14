@@ -13,3 +13,28 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
+.container {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 200px;
+}
+
+.toggle {
+    visibility: hidden;
+}
+
+.label {
+    height: 40px;
+    width: 80px;
+    background-color: #d0d0d0;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 15px 0;
+}
+
+.toggle:checked + .label {
+    background-color: #8e44ad;
+}
