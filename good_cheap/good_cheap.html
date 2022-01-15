@@ -10,31 +10,36 @@
     </head>
 
     <body>
-        <h2>How do you want your project to be?</h2>
+        <h2>How do you want your blockchain to be?</h2>
+        <small>Based on Vitalik's Scalability Trilemma</small>
 
         <div class="container">
-            <input type="checkbox" id="good" class="toggle">
-            <label for="good" class="label">
+            <input type="checkbox" id="decentralised" class="toggle">
+            <label for="decentralised" class="label">
                 <div class="ball"></div>
             </label>
-            <span>Good</span>
+            <span class="name">Decentralised</span>
         </div>
         
         <div class="container">
-            <input type="checkbox" id="cheap" class="toggle">
-            <label for="cheap" class="label">
+            <input type="checkbox" id="scalable" class="toggle">
+            <label for="scalable" class="label">
                 <div class="ball"></div>
             </label>
-            <span>Cheap</span>
+            <span class="name">Scalable</span>
         </div>
 
         <div class="container">
-            <input type="checkbox" id="fast" class="toggle">
-            <label for="fast" class="label">
+            <input type="checkbox" id="secured" class="toggle">
+            <label for="secured" class="label">
                 <div class="ball"></div>
             </label>
-            <span>Fast</span>
+            <span class="name">Secured</span>
         </div>
 
+        <div class="answer-container">
+            <h2>Answer: <span id="answer"></span></h3>
+        </div>
+        <script src="good_cheap.js"></script>
     </body>
 </html>
