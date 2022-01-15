@@ -49,4 +49,32 @@ body {
     position: absolute;
     top: 2.5px;
     left: 3px;
+    align-items: center;
+    justify-content: center;
+    animation: slideOff 0.2s linear forwards;
+}
+
+.toggle:checked + .label .ball {
+    animation: slideOn 0.2s linear forwards;
+}
+
+
+@keyframes slideOn {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(40px);
+    }
+}
+
+@keyframes slideOff {
+    0% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
