@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 small {
@@ -73,6 +74,7 @@ small {
 .answer-container {
     /* border: 1px solid black; */
     width: 350px;
+    height: 50px;
 }
 
 .toggle:checked + .label .ball {
