@@ -42,7 +42,7 @@ body {
 }
 
 .final.show {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(0);
     animation: show 0.2s ease-out;
 }
 
@@ -59,3 +59,8 @@ body {
         transform: translate(-50%, -50%) scale(1);
     }
 }
+
+.nums {
+
+}
+
