@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
-.body {
+body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
@@ -14,12 +16,25 @@
 .carousel {
     height: 530px;
     width: 500px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+}
+
+.image-container {
+    display: flex;
 }
 
 img {
     height: 500px;
     width: 500px;
     object-fit: cover;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    
 }
