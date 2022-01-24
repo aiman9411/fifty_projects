@@ -22,6 +22,7 @@ body {
 
 .image-container {
     display: flex;
+    transform: ;
 }
 
 img {
@@ -36,5 +37,10 @@ img {
 }
 
 button {
-    
+    width: 49.5%;
+    background-color: rebeccapurple;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #fff;
 }
