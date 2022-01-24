@@ -24,7 +24,7 @@ function changeImg() {
 
 function resetInterval() {
     clearInterval(interval);
-    interval = setInterval(run, 4000);
+    interval = setInterval(run, 2000);
 }
 
 prevButton.addEventListener('click', () => {
