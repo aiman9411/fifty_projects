@@ -9,18 +9,26 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 .container {
-    width: 500px;
-    height: 500px;
+    max-width: 400px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
 }
 
 .square {
     height: 15px;
     width: 15px;
-    background-color: #171717;
+    background-color: #1d1d1d;
     margin: 2px;
+    transition: 2s ease;
+}
+
+.square:hover {
+    transition-duration: 0s;
 }
