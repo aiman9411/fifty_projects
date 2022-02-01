@@ -49,6 +49,10 @@ body {
     width: 600px;
 }
 
+.boxes.big .box {
+    transform: rotateZ(360deg);
+}
+
 .box {
     position: relative;
     height: 125px;
