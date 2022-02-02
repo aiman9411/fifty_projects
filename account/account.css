@@ -23,7 +23,7 @@ body {
     padding: 30px;
     text-align: center;
     max-width: 800px;
-    /* height: 700px; */
+    height: 550px;
 }
 
 #title {
@@ -66,6 +66,11 @@ body {
     border: 1px solid #3498db;
 }
 
+.number.empty {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    border: 1px solid red;
+}
+
 #print {
     background-color: #eeeeee;
     margin: 30px auto 0;
@@ -75,4 +80,23 @@ body {
     border-radius: 5px;
     color: rgba(0, 0, 0, 0.6);
     line-height: 1.5;
+    display: none;
+}
+
+#print.active {
+    display: inherit;
+}
+
+#proceed {
+    background-color: #39a2db;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#proceed:active {
+    transform: scale(0.95);
 }
