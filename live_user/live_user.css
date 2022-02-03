@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -17,8 +17,9 @@ body {
 }
 
 .container {
-    border: 1px solid black;
-    width: 320px;
+    /* border: 1px solid black; */
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .part1 {
@@ -51,3 +52,38 @@ body {
 #input:focus {
     outline: none;
 }
+
+.part2 {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.user {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 17px;
+}
+
+.image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto 20px;
+}
+
+.info {
+    /* border: 1px solid black; */
+    margin-top: -5px;
+    margin-left: -10px;
+}
+
+.name {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.location {
+    margin-top: -10px;
+    font-size: 13px;
+}
+
