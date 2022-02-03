@@ -24,3 +24,17 @@ async function getUser() {
 
 }
 
+// input.addEventListener("input", (e) => {
+//     const users = document.querySelectorAll(".user");
+//     users.forEach(user => {
+//         if(e.target.value !== user.name.first) {
+//             user.classList.add("hide");
+//         }
+//     })
+// })
+
+
+function searchItem(term) {
+    const listUsers = document.querySelectorAll(".user");
+    
+}

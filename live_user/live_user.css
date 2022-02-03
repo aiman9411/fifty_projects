@@ -64,6 +64,10 @@ body {
     padding-bottom: 15px;
 }
 
+.user.active {
+    display: none;
+}
+
 .image {
     height: 60px;
     width: 60px;
