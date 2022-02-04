@@ -4,13 +4,12 @@ const button = document.getElementById("button");
 const ratingContainer = document.querySelector(".rating-container");
 let selectedRating ="Happy";
 
-ratingContainer.addEventListener("click", (e) => {
-    if(e.target.parentNode.classList.contains('rating')) {
+ratings.forEach(item => {
+    item.addEventListener("click", () => {
         removeActive();
-        e.target.parentNode.classList.add("active");
-        selectedRating = e.target.nextElementSibling.innerHTML;
-        console.log(selectedRating);
-    }
+        item.classList.add("active");
+        selectedRating = item.innerText;
+    })
 })
 
 button.addEventListener("click", () => {
@@ -21,7 +20,6 @@ button.addEventListener("click", () => {
     <p>We will use your feedback to improve our <br>customer support</p>
     `
 })
-
 
 function removeActive() {
     ratings.forEach(item => item.classList.remove('active'))
