@@ -19,9 +19,14 @@ body {
     /* border: 1px solid black; */
     padding: 30px;
     width: 400px;
+    height: 280px;
     text-align: center;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.second-container.hide {
+    display: none;
 }
 
 #question {
