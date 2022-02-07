@@ -40,14 +40,22 @@ body {
     left: 0;
     width: 28%;
     height: 100%;
-    /* display: none; */
+}
+
+.container.hide {
+    display: none;
 }
 
 #black {
     background-color: black;
-    width: 100%;
+    width: 0%;
     height: 100%;
     position: absolute;
+    transition: width 10s ease;
+}
+
+#black.active {
+    width: 100%;
 }
 
 #red {
