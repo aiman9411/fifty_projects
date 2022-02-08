@@ -1,8 +1,8 @@
-const container = document.querySelector(".container");
-const show = document.getElementById("button");
-const black = document.getElementById("black");
+const openBtn = document.querySelector(".open-btn");
+const navs = document.querySelectorAll(".nav");
+const closeBtn = document.querySelector(".close-btn");
 
-show.addEventListener('click', () => {
-    container.classList.remove("hide");
-    black.classList.add("active");
-})
+
+openBtn.addEventListener("click", () => navs.forEach(nav => nav.classList.add("visible")));
+closeBtn.addEventListener("click", () => navs.forEach(nav => nav.classList.remove("visible")));
+
