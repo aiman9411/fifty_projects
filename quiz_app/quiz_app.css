@@ -38,7 +38,7 @@ ul li {
     margin: 20px 0;
 }
 
-#submit {
+.button {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -52,10 +52,15 @@ ul li {
     border-radius: 0 0 10px 10px;
 }
 
-#submit:hover {
+.button:hover {
     background-color: #9c51e0;
 }
 
-#submit:active {
+.button:active {
     background-color: #7a0bc0;
+}
+
+body #statement {
+    text-align: center;
+    margin-top: 160px;
 }

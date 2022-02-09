@@ -44,6 +44,7 @@ const d_text = document.getElementById("d_text");
 const submitButton = document.getElementById("submit");
 
 let number = 0;
+let score = 0;
 
 loadQuiz();
 
@@ -76,5 +77,22 @@ function getSelected() {
 
 submitButton.addEventListener("click", () => {
     const answer = getSelected();
-    console.log(answer);
+
+    if(answer) {
+        if(answer === quizData[number].correct) {
+            score++;
+        }
+
+        number++;
+
+        if(number < quizData.length) {
+            loadQuiz();
+        } else {
+            container.innerHTML = 
+            `<h2 id="statement">Your score is ${score}/${quizData.length}
+            <button class="button" onclick="location.reload()">Reload</button>
+            `;
+        }
+    }
+
 })
