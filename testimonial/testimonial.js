@@ -1,3 +1,9 @@
+const imgEl = document.getElementById("img");
+const nameEl = document.getElementById("name");
+const testimonialEl = document.getElementById("testimonial");
+const positionEl = document.getElementById("position");
+
+
 const testimonials = [
     {
       name: 'Miyah Myles',
@@ -52,19 +58,20 @@ const testimonials = [
     },
   ]
 
-const img = document.getElementById("img");
-const name = document.getElementById("name");
-const testimonial = document.getElementById(".testimonial");
-const position = document.getElementById("position");
-let number = 0;
+let number = 1;
 
 function inputUser() {
     const { name, position, photo, text } = testimonials[number];
-    img.src = photo;
-    name.innerHTML = name;
-    position.innerHTML = position;
+    imgEl.src = photo;
+    nameEl.innerHTML = name;
+    positionEl.innerHTML = position;
+    testimonialEl.innerText = text;
+    
+    number++;
+
+    if(number > testimonials.length -1 ) {
+        number = 0;
+    }
 }
 
-setTimeout(() => {
-    inputUser()
-}, 3000);
+setInterval(inputUser, 10000);
