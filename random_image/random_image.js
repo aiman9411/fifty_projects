@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+const button = document.getElementById("button");
 const unsplashURL = 'https://source.unsplash.com/random/';
 const row = 5;
 
@@ -16,3 +17,5 @@ function insertImage() {
 function randomNumber() {
     return Math.floor(Math.random() * 10) + 300;
 }
+
+button.addEventListener('click', () => window.location.reload());
