@@ -11,13 +11,13 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
 }
 
 .title {
     font-size: 170px;
-    color: rgba(191, 162, 219, 0.4);
+    color: rgba(182, 103, 241, 0.25);
 }
 
 .container {
