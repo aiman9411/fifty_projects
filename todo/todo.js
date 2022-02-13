@@ -39,9 +39,9 @@ function addTodo(todo) {
         if(todo && todo.completed) {
             task.classList.add("completed");
         }
-        
+
         task.addEventListener('click', () => {
-            task.classList.add('completed');
+            task.classList.toggle('completed');
             updateLS();
         })
 
