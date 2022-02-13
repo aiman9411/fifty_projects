@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #fdfaf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.title {
+    font-size: 170px;
+    color: rgba(191, 162, 219, 0.4);
+}
+
+.container {
+    margin-top: -20px;
+    box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.2);
+}
+
+#input {
+    padding: 10px 20px;
+    font-size: 35px;
+    border: none;
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.1);
+}
+
+::placeholder {
+    color: rgba( 0, 0, 0, 0.3);
+}
+
+#input:focus {
+    outline-color: #8a39e1;
+}
+
+.task {
+    padding: 15px 20px;
+    background-color: #ffffff;
+    font-size: 25px;
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.1);
+    color: rgba( 0, 0, 0, 0.7);
+}
+
+#reminder {
+    text-align: center;
+    color: rgba( 0, 0, 0, 0.4);
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    margin-top: 50px;
+}
+
+.task.completed {
+    color: #c9ccd5;
+    text-decoration: line-through;
+}
