@@ -70,8 +70,12 @@ button.select {
     background-color: transparent;
     height: 200px;
     width: 200px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Press Start 2p", sans-serif;
 }
 
 button.select:hover {
     background-color: #fff;
+    color: #516dff;
 }
