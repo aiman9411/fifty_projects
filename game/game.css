@@ -44,3 +44,34 @@ button.start:active {
     height: 100px;
     width: 100px;
 }
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+.insects-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    object-fit: contain;
+}
+
+ul li {
+    margin: 10px;
+}
+
+button.select {
+    border: 2px solid white;
+    background-color: transparent;
+    height: 200px;
+    width: 200px;
+}
+
+button.select:hover {
+    background-color: #fff;
+}
