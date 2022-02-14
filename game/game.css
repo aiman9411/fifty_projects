@@ -9,4 +9,29 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    text-align: center;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #516dff;
+    color: #fff;
+}
+
+button.start {
+    font-family: inherit;
+    border: none;
+    font-size: 15px;
+    padding: 15px 20px;
+    color: #516dff;
+}
+
+.img {
+    height: 100px;
+    width: 100px;
 }
