@@ -46,7 +46,7 @@ button.start:active {
 }
 
 .screen.up {
-    margin-top: -100vh;
+    margin-top: -200vh;
 }
 
 .insects-list {
@@ -79,3 +79,61 @@ button.select:hover {
     background-color: #fff;
     color: #516dff;
 }
+
+#time {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.message {
+    font-size: 15px;
+    line-height: 2;
+    width: 100vw;
+    padding: 20px;
+    z-index: 100;
+    background-color: rgba( 0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    transition: transform 0.3s ease;
+}
+
+.message.visible {
+    transform: translate(-50%, 150%);
+    opacity: 1;
+}
+
+.insect {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    position: absolute;
+    /* top: 400px;
+    left: 500px; */
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.insect.caught {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.insect img {
+    width: 100px;
+    height: 100px;
+}
+
