@@ -92,6 +92,10 @@ button.select:hover {
     right: 20px;
 }
 
+.screen.game-container {
+    position: relative;
+}
+
 .message {
     font-size: 15px;
     line-height: 2;
