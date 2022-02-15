@@ -21,6 +21,7 @@ body {
     width: 100vw;
     background-color: #516dff;
     color: #fff;
+    transition: margin 1s ease-out;
 }
 
 button.start {
@@ -46,7 +47,7 @@ button.start:active {
 }
 
 .screen.up {
-    margin-top: -200vh;
+    margin-top: -100vh;
 }
 
 .insects-list {
